@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launching Soon</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to right, #c82222, #19201e);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: white;
+            text-transform: uppercase;
+            margin: 0;
+            animation: fadeIn 3s ease-in-out infinite;
+        }
+
+        .subtext {
+            font-size: 1.5em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+            animation: fadeInUp 2s ease-in-out infinite;
+        }
+
+        @keyframes fadeIn {
+            0%, 100% { opacity: 0; transform: scale(0.9); }
+            50% { opacity: 1; transform: scale(1.1); }
+        }
+
+        @keyframes fadeInUp {
+            0%, 100% { opacity: 0; transform: translateY(20px); }
+            50% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Launching Soon</h1>
+        <div class="subtext">Stay Tuned!</div>
+    </div>
+</body>
+</html>
