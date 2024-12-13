@@ -4,9 +4,16 @@ RewriteCond %{HTTPS} !on
 RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$ 
 RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$ 
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-RewriteCond %{HTTP_HOST} !^www.aboin.app$ [NC]
-RewriteRule ^(.*)$ https://www.aboin.app/$1 [L,R=301]
-ErrorDocument 404 /404
+<VirtualHost *:80>
+    ServerName aboin.app
+    Redirect permanent / http://www.aboin.app/
+</VirtualHost>
+
+<VirtualHost *:80>
+    ServerName www.aboin.app
+    DocumentRoot "/var/www/aboin.app"
+    # Other configuration
+</VirtualHost>
 
 
 RewriteCond %{REQUEST_FILENAME} !-d
