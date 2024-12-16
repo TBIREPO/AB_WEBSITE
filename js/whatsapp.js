@@ -12,7 +12,7 @@
     var options = {
         enabled: true,
         chatButtonSetting: {
-            backgroundColor: "#250E36",
+            backgroundColor: "#25D366",
             ctaText: "",
             borderRadius: "25",
             marginLeft: "20",
@@ -29,7 +29,7 @@
             backgroundColor: "#c32034",
             ctaText: "Start Chat",
             borderRadius: "25",
-            autoShow: false,
+            autoShow: true,
             phoneNumber: "+919627702770",
         },
     };
