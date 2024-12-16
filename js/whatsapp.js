@@ -25,7 +25,7 @@
             brandSubTitle: "ABOIN Care When You Can't Be There.",
             brandImg: "assets/img/logo-icons/favicon.jpeg",
             welcomeText: "Hi, there!\nHow can I help you?",
-            messageText: "Hello, I have a question about Bluideas Services...",
+            messageText: "Hi, there!\nHow can I help you?...",
             backgroundColor: "#c32034",
             ctaText: "Start Chat",
             borderRadius: "25",
